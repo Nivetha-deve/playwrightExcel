@@ -11,13 +11,13 @@ const worksheet = workbook.getWorksheet("Sheet1");
 
 let user = []
 
-worksheet.eachRow((row,rownumber) =>{
-    if(rownumber > 1){
-         const username = row.getCell(1).value;
-         const password = row.getCell(2).value;
-         user.push({username,password});
-    }
-})
+// worksheet.eachRow((row,rownumber) =>{
+//     if(rownumber > 1){
+//          const username = row.getCell(1).value;
+//          const password = row.getCell(2).value;
+//          user.push({username,password});
+//     }
+// })
 return user;
 }
 
