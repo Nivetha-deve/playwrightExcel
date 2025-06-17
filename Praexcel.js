@@ -12,6 +12,7 @@
 //     })
 // })
 
+
 //.....................................................
 // accessing excel sheet using js async and await another method...
 
@@ -19,7 +20,7 @@ const Exceljs = require("exceljs")
 
 async function readwrite(){
     let output = {row: -1, column: -1}
-    const workbook = new Exceljs.Workbook();
+    const workbook = new Exceljs.Workbook();  
     await workbook.xlsx.readFile("F:/trend-notes/excelpractice.xlsx");
     const worksheet = workbook.getWorksheet("Sheet1")
     worksheet.eachRow((row,rownumber) =>{
